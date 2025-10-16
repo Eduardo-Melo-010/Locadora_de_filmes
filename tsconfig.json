@@ -6,7 +6,7 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
-    "outDir": "./build",
+    "outDir": "Locadora/build",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module

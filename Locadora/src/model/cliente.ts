@@ -43,4 +43,8 @@ export class cliente {
     public setTelefone (telefone: string): void {
         this.telefone = telefone;
     }
+
+    public toString(): string {
+        return `cliente: ${this.nome} CPF: ${this.cpf} Endereço: ${this.endereco} Telefone: ${this.telefone}`;
+    }    
 }
