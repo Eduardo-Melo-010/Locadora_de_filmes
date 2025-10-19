@@ -27,8 +27,29 @@ const conta3 = new Conta (cliente3);
 conta1.locarFilmes ([filmes[0], filmes[1]]);
 conta1.locarFilmes ([filmes[4], filmes[9]]);
 conta1.locarFilmes ([filmes[2]]);
-conta1.pagarDebito (10);
+
+conta2.locarFilmes ([filmes[5], filmes[6]]);
+conta2.locarFilmes ([filmes[3]]);
+conta2.locarFilmes ([filmes[7], filmes[8]]);
+
+conta3.locarFilmes ([filmes[0], filmes[2], filmes[3]]);
+conta3.locarFilmes ([filmes[5]]);
+conta3.locarFilmes ([filmes[6], filmes[9]]);
 
 
 console.log(conta1.extratoHistorico());
-console.log("Saldo Devedor:", conta1.getSaldoDevedor().toFixed(2), "\n");
+conta1.pagarDebito (55);
+console.log ('');
+console.log("Saldo Devedor: R$" + conta1.getSaldoDevedor().toFixed(2), "\n");
+
+
+console.log(conta2.extratoHistorico());
+conta2.pagarDebito (5);
+console.log ('');
+console.log("Saldo Devedor: R$" + conta2.getSaldoDevedor().toFixed(2), "\n");
+
+
+console.log(conta3.extratoHistorico());
+conta3.pagarDebito (15);
+console.log ('');
+console.log("Saldo Devedor: R$ " + conta3.getSaldoDevedor().toFixed(2));

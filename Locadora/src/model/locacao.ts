@@ -32,7 +32,15 @@ export class Locacao {
         return this.listaFilmes.map(f => f.getTitulo()).join(", ");
     }
 
-    public toString (): string{
-        return `Data da Locação: ${this.dataLocacao} | Lista de Filmes: ${this.listaFilmes} | Valor total a pagar: R$${this.valorTotalAPagar.toFixed(2)}`;
+    public toString(): string {
+        const dataFormatada = this.dataLocacao.toLocaleString("pt-BR", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+        });
+
+    return `Data da Locação: ${dataFormatada} | Filmes: ${this.listarFilmes()} | Valor total: R$ ${this.valorTotalAPagar.toFixed(2)}`;
     }
 }

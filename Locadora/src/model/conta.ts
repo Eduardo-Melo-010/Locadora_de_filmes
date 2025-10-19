@@ -40,7 +40,7 @@ public pagarDebito (valor: number): void {
         this.saldoDevedor = 0;
     } else {
         this.saldoDevedor -= valor;
-        console.log(`Pagamento de R$${valor.toFixed(2)} efetuado. Novo saldo: R$${this.saldoDevedor.toFixed(2)}`);
+        console.log(`Pagamento de R$ ${valor.toFixed(2)} efetuado. Novo saldo: R$ ${this.saldoDevedor.toFixed(2)}`);
     }
 }
 
@@ -51,10 +51,11 @@ public extratoHistorico(): string {
       extrato += "Nenhuma locação registrada.\n";
     } else {
       this.historicoLocacao.forEach(locacao => {
-        extrato += `${locacao.getDataLocacao().toString()} | ${locacao.listarFilmes()} | R$${locacao.getValorTotalAPagar().toFixed(2)}\n`;
+        extrato += `${locacao.toString()} \n`;
       });
     }
-     extrato += `\nSaldo devedor atual: R$${this.saldoDevedor.toFixed(2)}\n`;
+
+    extrato += `\nSaldo Devedor: R$ ${this.saldoDevedor.toFixed(2)}\n`;
     return extrato;
     }
 
@@ -80,4 +81,3 @@ public extratoHistorico(): string {
     this.saldoDevedor = valor;
   }
 }
-
