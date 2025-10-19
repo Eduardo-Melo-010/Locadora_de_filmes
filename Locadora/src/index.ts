@@ -40,7 +40,7 @@ conta3.locarFilmes ([filmes[6], filmes[9]]);
 console.log(conta1.extratoHistorico());
 conta1.pagarDebito (55);
 console.log ('');
-console.log("Saldo Devedor: R$" + conta1.getSaldoDevedor().toFixed(2), "\n");
+console.log("Saldo Devedor: R$" +  conta1.getSaldoDevedor().toFixed(2), "\n");
 
 
 console.log(conta2.extratoHistorico());

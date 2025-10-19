@@ -60,24 +60,24 @@ public extratoHistorico(): string {
     }
 
   // === Getters ===
-  public getCliente(): Cliente {
-    return this.cliente;
-  }
-
-  public getSaldoDevedor(): number {
-    return this.saldoDevedor;
-  }
-
-  public getHistoricoLocacao(): Locacao[] {
-    return this.historicoLocacao;
-  }
-
-  // === Setters ===
-  public setCliente(cliente: Cliente): void {
-    this.cliente = cliente;
-  }
-
-  public setSaldoDevedor(valor: number): void {
-    this.saldoDevedor = valor;
-  }
+    public getCliente(): Cliente {
+      return this.cliente;
+    }
+  
+    public getSaldoDevedor(): number {
+      return this.saldoDevedor;
+    }
+  
+    public getHistoricoLocacao(): Locacao[] {
+      return this.historicoLocacao;
+    }
+  
+    // === Setters ===
+    public setCliente(cliente: Cliente): void {
+      this.cliente = cliente;
+    }
+  
+    public setSaldoDevedor(valor: number): void {
+      this.saldoDevedor = valor;
+    }
 }
