@@ -1,6 +1,6 @@
 import { Filme } from "./filme";
 
-export class locacao {
+export class Locacao {
     private dataLocacao: Date;
     private valorTotalAPagar: number;
     private listaFilmes: Filme[];

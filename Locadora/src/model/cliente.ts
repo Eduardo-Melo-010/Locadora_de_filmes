@@ -1,4 +1,4 @@
-export class cliente {
+export class Cliente {
     private nome: string;
     private cpf: string;
     private endereco: string;
@@ -45,6 +45,6 @@ export class cliente {
     }
 
     public toString(): string {
-        return `cliente: ${this.nome} CPF: ${this.cpf} Endereço: ${this.endereco} Telefone: ${this.telefone}`;
+        return `Cliente: ${this.nome} CPF: ${this.cpf} Endereço: ${this.endereco} Telefone: ${this.telefone}`;
     }    
 }
